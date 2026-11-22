@@ -48,12 +48,12 @@ body {
   border: 0; border-radius: var(--radius);
   box-shadow: 0 0 0 1px rgba(19, 19, 22, .1), 0 1px 2px rgba(19, 19, 22, .08), 0 2px 3px -1px rgba(19, 19, 22, .06);
   cursor: pointer; user-select: none; white-space: nowrap;
-  transition: background-color .25s var(--ease, cubic-bezier(.4, 0, .2, 1)), box-shadow .25s var(--ease, cubic-bezier(.4, 0, .2, 1)), color .25s;
+  transition: background-color .25s var(--ease, cubic-bezier(.4, 0, .2, 1)), box-shadow .25s var(--ease, cubic-bezier(.4, 0, .2, 1)), color .25s, filter .25s;
 }
-.btn:hover:not(:disabled) { background-color: #fafafb; box-shadow: 0 0 0 1px rgba(19, 19, 22, .16), 0 1px 2px rgba(19, 19, 22, .08), 0 6px 10px -4px rgba(19, 19, 22, .12); }
-.btn:active:not(:disabled) { transform: translateY(1px); }
+.btn:hover:not(:disabled) { background-color: #f7f7f8; }
+.btn:active:not(:disabled) { filter: brightness(.94); transition-duration: .08s; }
 .btn:focus-visible { outline: none; box-shadow: 0 0 0 3px rgba(21, 128, 61, .28); }
-.btn:disabled { opacity: .42; cursor: default; box-shadow: none; }
+.btn:disabled { cursor: default; color: var(--dim, #9394a1); background: #fff; box-shadow: 0 0 0 1px rgba(19, 19, 22, .08); }
 
 .btn.primary {
   color: #f6f6f6;
@@ -61,7 +61,8 @@ body {
   border: 0;
   box-shadow: 0 0 0 1px #2f3037, inset 0 1px 0 rgba(255, 255, 255, .1), 0 2px 3px rgba(34, 42, 53, .2), 0 1px 1px rgba(0, 0, 0, .24);
 }
-.btn.primary:hover:not(:disabled) { background: #3a3b44; box-shadow: 0 0 0 1px #3a3b44, inset 0 1px 0 rgba(255, 255, 255, .12), 0 6px 12px -4px rgba(19, 19, 22, .35); }
+.btn.primary:hover:not(:disabled) { background: #45464f; }
+.btn.primary:disabled { color: var(--dim, #9394a1); background: var(--soft); box-shadow: 0 0 0 1px var(--line); }
 
 .btn.accent {
   color: #ffffff;
@@ -69,7 +70,7 @@ body {
   border: 0;
   box-shadow: 0 0 0 1px var(--accent-edge), inset 0 1px 0 rgba(255, 255, 255, .18), 0 2px 3px rgba(15, 95, 46, .25), 0 1px 1px rgba(0, 0, 0, .2);
 }
-.btn.accent:hover:not(:disabled) { background: var(--accent-top); box-shadow: 0 0 0 1px var(--accent-edge), inset 0 1px 0 rgba(255, 255, 255, .2), 0 8px 16px -6px rgba(15, 95, 46, .5); }
+.btn.accent:hover:not(:disabled) { background: #1b9a4b; }
 .btn.primary:focus-visible, .btn.accent:focus-visible { box-shadow: 0 0 0 3px rgba(23, 23, 23, .18); }
 
 .btn .icon { flex: none; }
