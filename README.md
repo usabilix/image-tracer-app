@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo.min.svg" alt="Image Tracer" height="32">
+  <img src="assets/logo.min.svg" alt="Image Tracer" height="40">
 </p>
 
 <p align="center">
