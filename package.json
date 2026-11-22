@@ -2,6 +2,7 @@
   "name": "image-tracer-app",
   "private": true,
   "type": "module",
+  "license": "MIT",
   "description": "Image Tracer: free, offline, in-browser image to SVG tracer.",
   "scripts": {
     "start": "python3 serve.py 8000",

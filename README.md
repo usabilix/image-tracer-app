@@ -31,6 +31,7 @@ This repository contains **only the app**: plain HTML, CSS and JavaScript module
 - [Tests](#tests)
 - [Deploying](#deploying)
 - [Browser support](#browser-support)
+- [License](#license)
 
 ## Features
 
@@ -178,3 +179,7 @@ The arrow next to the logo links to the Image Tracer website; change its `href` 
 ## Browser support
 
 Any current version of Chrome, Edge, Firefox or Safari. The app needs JavaScript modules, module Web Workers and `createImageBitmap`. Pasting from the clipboard works through the browser's paste event; where a browser does not deliver it, the app reads the clipboard directly, which may show a permission prompt the first time.
+
+## License
+
+[MIT](LICENSE) © 2026 Usabilix. You are free to use, copy, modify and distribute the code, including commercially, as long as the copyright and licence notice are kept.
